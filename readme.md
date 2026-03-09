@@ -1,6 +1,6 @@
 # B2B SaaS Platform (Angular / .NET)
 
-> Personal project — intentionally anonymised. Built and maintained for over 2 years, currently live with business clients.
+> Personal project — intentionally anonymised. Built and maintained for over 2 years, currently live with business clients. Development managed via personal Azure DevOps backlog.
 
 ## Business Context
 Polish B2B SaaS targeting a specific industry. Companies enter their core business orders, which automatically populate and sync data across the entire platform — documents, invoices, monthly/annual reports. Replaces manual workflows based on Word, Paint and paper documents with a centralised, integrated system. Key modules: industry-specific document management, canvas-based document generator, VAT invoicing with KSeF integration, report generation.
@@ -29,4 +29,5 @@ Polish B2B SaaS targeting a specific industry. Companies enter their core busine
 - Date format inconsistency (dashes instead of dots) — reported by client, resolved immediately
 - Pagination state bug — page not resetting to 1 on filter/search change; caught during manual smoke testing
 - FabricJS text input rendering issue after page size change (A4→A3) — caught during manual smoke testing before reaching clients
+
 - Invoice calculation mismatch — frontend calculated totals dynamically for preview performance; on save, backend re-validated calculations and logged mismatches; error detected via Grafana on a test client environment and resolved before the client was aware
